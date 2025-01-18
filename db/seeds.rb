@@ -10,7 +10,7 @@
 
 
 10.times do |n|
-  Event.create(
+  event = Event.create(
     name: "Event#{n + 1}",
     url: "localhost:3001/events/#{n + 1}",
     description: "Event#{n} description",
@@ -20,4 +20,8 @@
     location: 'Florianópolis',
     participant_limit: 20 + n,
     status: 'draft')
+
+    event.schedules.create(date: "#{14 + n}-01-2025", start_time: '11:00')
+    event.schedules.create(date: "#{15 + n}-01-2025", start_time: '11:00')
+    event.schedules.create(date: "#{16 + n}-01-2025", start_time: '11:00')
 end

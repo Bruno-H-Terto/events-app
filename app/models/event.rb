@@ -3,4 +3,6 @@ class Event < ApplicationRecord
     draft: 0,
     published: 5
   }
+
+  has_many :schedules
 end
