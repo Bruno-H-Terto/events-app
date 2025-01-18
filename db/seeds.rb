@@ -14,14 +14,23 @@
     name: "Event#{n + 1}",
     url: "localhost:3001/events/#{n + 1}",
     description: "Event#{n} description",
-    start_date: '15-01-2025',
-    end_date: '17-01-2025',
+    start_date: "#{14 + n}-01-2025",
+    end_date: "#{16 + n}-01-2025",
     event_type: 'in-person',
     location: 'Florianópolis',
     participant_limit: 20 + n,
     status: 'draft')
 
-    event.schedules.create(date: "#{14 + n}-01-2025", start_time: '11:00')
-    event.schedules.create(date: "#{15 + n}-01-2025", start_time: '11:00')
-    event.schedules.create(date: "#{16 + n}-01-2025", start_time: '11:00')
+    schedule_1 = event.schedules.create(date: "#{14 + n}-01-2025", start_time: '11:00')
+    schedule_2 = event.schedules.create(date: "#{15 + n}-01-2025", start_time: '11:00')
+    schedule_3 = event.schedules.create(date: "#{16 + n}-01-2025", start_time: '11:00')
+
+    schedule_1.schedule_items.create(start_time: '11:00', lenght: 90, title: "Title #{1 + n}", description: 'Something', speaker_email: "speaker#{n}@email.com")
+    schedule_1.schedule_items.create(start_time: '14:00', lenght: 90, title: "Title #{1 + n}", description: 'Something', speaker_email: "speaker#{n}@email.com")
+
+    schedule_2.schedule_items.create(start_time: '11:00', lenght: 90, title: "Title #{1 + n}", description: 'Something', speaker_email: "speaker#{n}@email.com")
+    schedule_2.schedule_items.create(start_time: '14:00', lenght: 90, title: "Title #{1 + n}", description: 'Something', speaker_email: "speaker#{n}@email.com")
+
+    schedule_3.schedule_items.create(start_time: '11:00', lenght: 90, title: "Title #{1 + n}", description: 'Something', speaker_email: "speaker#{n}@email.com")
+    schedule_3.schedule_items.create(start_time: '14:00', lenght: 90, title: "Title #{1 + n}", description: 'Something', speaker_email: "speaker#{n}@email.com")
 end

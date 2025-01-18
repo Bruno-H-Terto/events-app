@@ -1,5 +1,15 @@
 # Api teste Events app
 
+## Configuração
+
+Rode:
+
+```
+bundle
+rails db:setup
+rails s
+```
+
 GET http://localhost:3000/api/v1/events
 
 ```
@@ -98,3 +108,47 @@ GET http://localhost:3000/api/v1/events/1/schedules/1
 }
 ```
 
+GET http://localhost:3000/api/v1/events/1/schedules/1/schedule_items
+
+```
+[
+  {
+    "id": 1,
+    "start_time": "2000-01-01T11:00:00.000Z",
+    "lenght": 90,
+    "title": "Title 1",
+    "description": "Something",
+    "speaker_email": "speaker0@email.com",
+    "schedule_id": 1,
+    "created_at": "2025-01-18T12:18:46.065Z",
+    "updated_at": "2025-01-18T12:18:46.065Z"
+  },
+  {
+    "id": 2,
+    "start_time": "2000-01-01T14:00:00.000Z",
+    "lenght": 90,
+    "title": "Title 1",
+    "description": "Something",
+    "speaker_email": "speaker0@email.com",
+    "schedule_id": 1,
+    "created_at": "2025-01-18T12:18:46.071Z",
+    "updated_at": "2025-01-18T12:18:46.071Z"
+  }
+]
+```
+
+GET http://localhost:3000/api/v1/events/1/schedules/1/schedule_items/1
+
+```
+{
+  "id": 1,
+  "start_time": "2000-01-01T11:00:00.000Z",
+  "lenght": 90,
+  "title": "Title 1",
+  "description": "Something",
+  "speaker_email": "speaker0@email.com",
+  "schedule_id": 1,
+  "created_at": "2025-01-18T12:18:46.065Z",
+  "updated_at": "2025-01-18T12:18:46.065Z"
+}
+```
