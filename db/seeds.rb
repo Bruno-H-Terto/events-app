@@ -10,14 +10,15 @@
 
 
 10.times do |n|
+  name = Faker::Name.name
   event = Event.create(
-    name: "Event#{n + 1}",
+    name: name,
     url: "localhost:3001/events/#{n + 1}",
-    description: "Event#{n} description",
+    description: "#{name} teste",
     start_date: "#{14 + n}-01-2025",
     end_date: "#{16 + n}-01-2025",
     event_type: 'in-person',
-    location: 'Florianópolis',
+    location: Faker::Locations::Australia.location,
     participant_limit: 20 + n,
     status: 'draft')
 

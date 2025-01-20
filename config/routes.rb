@@ -8,6 +8,12 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  resources :events, only: [:index] do
+    collection do
+      get 'speakers'
+    end
+  end
   namespace :api do
     namespace :v1 do
       resources :events do
