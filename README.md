@@ -152,3 +152,21 @@ GET http://localhost:3000/api/v1/events/1/schedules/1/schedule_items/1
   "updated_at": "2025-01-18T12:18:46.065Z"
 }
 ```
+
+GET http://localhost:3001/events/speakers?email=teste@email.com
+
+```
+sucesso
+status: 200
+{
+  response: 'ok'
+}
+```
+
+```
+falha
+status: 404
+{
+  response: 'not found'
+}
+```
