@@ -15,8 +15,8 @@
     name: name,
     url: "localhost:3001/events/#{n + 1}",
     description: "#{name} teste",
-    start_date: "#{14 + n}-01-2025",
-    end_date: "#{16 + n}-01-2025",
+    start_date: 7.days.from_now,
+    end_date: 14.days.from_now,
     event_type: 'in-person',
     location: Faker::Locations::Australia.location,
     participant_limit: 20 + n,
@@ -27,11 +27,12 @@
     schedule_3 = event.schedules.create(date: "#{16 + n}-01-2025", start_time: '11:00')
 
     schedule_1.schedule_items.create(start_time: '11:00', lenght: 90, title: "Title #{1 + n}", description: 'Something', speaker_email: "speaker#{n}@email.com")
-    schedule_1.schedule_items.create(start_time: '14:00', lenght: 90, title: "Title #{1 + n}", description: 'Something', speaker_email: "speaker#{n}@email.com")
+    schedule_1.schedule_items.create(start_time: '14:00', lenght: 90, title: "Title #{2 + n}", description: 'Something', speaker_email: "speaker#{n}@email.com")
 
     schedule_2.schedule_items.create(start_time: '11:00', lenght: 90, title: "Title #{1 + n}", description: 'Something', speaker_email: "speaker#{n}@email.com")
-    schedule_2.schedule_items.create(start_time: '14:00', lenght: 90, title: "Title #{1 + n}", description: 'Something', speaker_email: "speaker#{n}@email.com")
+    schedule_2.schedule_items.create(start_time: '14:00', lenght: 90, title: "Title #{2 + n}", description: 'Something', speaker_email: "speaker#{n}@email.com")
 
     schedule_3.schedule_items.create(start_time: '11:00', lenght: 90, title: "Title #{1 + n}", description: 'Something', speaker_email: "speaker#{n}@email.com")
-    schedule_3.schedule_items.create(start_time: '14:00', lenght: 90, title: "Title #{1 + n}", description: 'Something', speaker_email: "speaker#{n}@email.com")
+    schedule_3.schedule_items.create(start_time: '14:00', lenght: 90, title: "Title #{2 + n}", description: 'Something', speaker_email: "speaker#{n}@email.com")
 end
+

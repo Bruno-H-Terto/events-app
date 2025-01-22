@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
@@ -9,16 +8,17 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
-  resources :events, only: [:index] do
+  resources :events, only: [ :index ] do
     collection do
-      get 'speakers'
+      get "speakers"
+      get "schedule_items"
     end
   end
   namespace :api do
     namespace :v1 do
       resources :events do
-        resources :schedules, only: [:index, :show] do
-          resources :schedule_items, only: [:index, :show], as: :items
+        resources :schedules, only: [ :index, :show ] do
+          resources :schedule_items, only: [ :index, :show ], as: :items
         end
       end
     end

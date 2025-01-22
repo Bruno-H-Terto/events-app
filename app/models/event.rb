@@ -5,4 +5,5 @@ class Event < ApplicationRecord
   }
 
   has_many :schedules
+  has_many :schedule_items, through: :schedules
 end
