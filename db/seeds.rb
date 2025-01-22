@@ -26,13 +26,12 @@
     schedule_2 = event.schedules.create(date: "#{15 + n}-01-2025", start_time: '11:00')
     schedule_3 = event.schedules.create(date: "#{16 + n}-01-2025", start_time: '11:00')
 
-    schedule_1.schedule_items.create(start_time: '11:00', lenght: 90, title: "Title #{1 + n}", description: 'Something', speaker_email: "speaker#{n}@email.com")
-    schedule_1.schedule_items.create(start_time: '14:00', lenght: 90, title: "Title #{2 + n}", description: 'Something', speaker_email: "speaker#{n}@email.com")
+    schedule_1.schedule_items.create(start_time: '11:00', lenght: 45, title: "Title #{1 + n}", description: "Something #{1 + n}", speaker_email: "speaker#{n}@email.com")
+    schedule_1.schedule_items.create(start_time: '14:00', lenght: 90, title: "Title #{2 + n}", description: "Something #{2 + n}", speaker_email: "speaker#{n}@email.com")
 
-    schedule_2.schedule_items.create(start_time: '11:00', lenght: 90, title: "Title #{1 + n}", description: 'Something', speaker_email: "speaker#{n}@email.com")
-    schedule_2.schedule_items.create(start_time: '14:00', lenght: 90, title: "Title #{2 + n}", description: 'Something', speaker_email: "speaker#{n}@email.com")
+    schedule_2.schedule_items.create(start_time: '11:00', lenght: 120, title: "Title #{3 + n}", description: "Something #{3 + n}", speaker_email: "speaker#{n}@email.com")
+    schedule_2.schedule_items.create(start_time: '14:00', lenght: 140, title: "Title #{4 + n}", description: "Something #{4 + n}", speaker_email: "speaker#{n}@email.com")
 
-    schedule_3.schedule_items.create(start_time: '11:00', lenght: 90, title: "Title #{1 + n}", description: 'Something', speaker_email: "speaker#{n}@email.com")
-    schedule_3.schedule_items.create(start_time: '14:00', lenght: 90, title: "Title #{2 + n}", description: 'Something', speaker_email: "speaker#{n}@email.com")
+    schedule_3.schedule_items.create(start_time: '11:00', lenght: 160, title: "Title #{5 + n}", description: "Something #{5 + n}", speaker_email: "speaker#{n}@email.com")
+    schedule_3.schedule_items.create(start_time: '14:00', lenght: 180, title: "Title #{6 + n}", description: "Something #{6 + n}", speaker_email: "speaker#{n}@email.com")
 end
-
