@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_01_18_120256) do
+ActiveRecord::Schema[8.0].define(version: 2025_01_24_205926) do
   create_table "events", force: :cascade do |t|
     t.string "name"
     t.string "url"
@@ -27,7 +27,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_01_18_120256) do
 
   create_table "schedule_items", force: :cascade do |t|
     t.time "start_time"
-    t.integer "lenght"
+    t.integer "length"
     t.string "title"
     t.string "description"
     t.string "speaker_email"

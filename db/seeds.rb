@@ -26,12 +26,48 @@
     schedule_2 = event.schedules.create(date: "#{15 + n}-01-2025", start_time: '11:00')
     schedule_3 = event.schedules.create(date: "#{16 + n}-01-2025", start_time: '11:00')
 
-    schedule_1.schedule_items.create(start_time: '11:00', lenght: 45, title: "Title #{1 + n}", description: "Something #{1 + n}", speaker_email: "speaker#{n}@email.com")
-    schedule_1.schedule_items.create(start_time: '14:00', lenght: 90, title: "Title #{2 + n}", description: "Something #{2 + n}", speaker_email: "speaker#{n}@email.com")
+    schedule_1.schedule_items.create(start_time: '11:00', length: 45, title: "Ruby on Rails com TDD #{1 + n}", description: """Nesta palestra, vamos explorar os fundamentos do TDD com Ruby on Rails, abordando desde os conceitos básicos até a aplicação prática no desenvolvimento de aplicações web. Você aprenderá a:
+Compreender os princípios do TDD e sua importância no desenvolvimento ágil;
+Escrever testes eficientes com RSpec, uma das ferramentas mais populares no ecossistema Rails;
+Implementar funcionalidades de forma iterativa, seguindo o ciclo 'Red, Green, Refactor';
+Melhorar a qualidade do código e reduzir bugs através de uma abordagem baseada em testes;
+Integrar boas práticas de TDD ao seu fluxo de trabalho no Rails.
+Seja você iniciante ou alguém que deseja reforçar seus conhecimentos, esta palestra fornecerá uma base sólida para começar a escrever código mais confiável e sustentável com Ruby on Rails.""", speaker_email: "speaker#{n}@email.com")
+    schedule_1.schedule_items.create(start_time: '14:00', length: 90, title: "Ruby on Rails com TDD #{2 + n}", description: """Nesta palestra, vamos explorar os fundamentos do TDD com Ruby on Rails, abordando desde os conceitos básicos até a aplicação prática no desenvolvimento de aplicações web. Você aprenderá a:
+Compreender os princípios do TDD e sua importância no desenvolvimento ágil;
+Escrever testes eficientes com RSpec, uma das ferramentas mais populares no ecossistema Rails;
+Implementar funcionalidades de forma iterativa, seguindo o ciclo 'Red, Green, Refactor';
+Melhorar a qualidade do código e reduzir bugs através de uma abordagem baseada em testes;
+Integrar boas práticas de TDD ao seu fluxo de trabalho no Rails.
+Seja você iniciante ou alguém que deseja reforçar seus conhecimentos, esta palestra fornecerá uma base sólida para começar a escrever código mais confiável e sustentável com Ruby on Rails.""", speaker_email: "speaker#{n}@email.com")
 
-    schedule_2.schedule_items.create(start_time: '11:00', lenght: 120, title: "Title #{3 + n}", description: "Something #{3 + n}", speaker_email: "speaker#{n}@email.com")
-    schedule_2.schedule_items.create(start_time: '14:00', lenght: 140, title: "Title #{4 + n}", description: "Something #{4 + n}", speaker_email: "speaker#{n}@email.com")
+    schedule_2.schedule_items.create(start_time: '11:00', length: 120, title: "Ruby on Rails com TDD #{3 + n}", description: """Nesta palestra, vamos explorar os fundamentos do TDD com Ruby on Rails, abordando desde os conceitos básicos até a aplicação prática no desenvolvimento de aplicações web. Você aprenderá a:
+Compreender os princípios do TDD e sua importância no desenvolvimento ágil;
+Escrever testes eficientes com RSpec, uma das ferramentas mais populares no ecossistema Rails;
+Implementar funcionalidades de forma iterativa, seguindo o ciclo 'Red, Green, Refactor';
+Melhorar a qualidade do código e reduzir bugs através de uma abordagem baseada em testes;
+Integrar boas práticas de TDD ao seu fluxo de trabalho no Rails.
+Seja você iniciante ou alguém que deseja reforçar seus conhecimentos, esta palestra fornecerá uma base sólida para começar a escrever código mais confiável e sustentável com Ruby on Rails.""", speaker_email: "speaker#{n}@email.com")
+    schedule_2.schedule_items.create(start_time: '14:00', length: 140, title: "Ruby on Rails com TDD #{4 + n}", description: """Nesta palestra, vamos explorar os fundamentos do TDD com Ruby on Rails, abordando desde os conceitos básicos até a aplicação prática no desenvolvimento de aplicações web. Você aprenderá a:
+Compreender os princípios do TDD e sua importância no desenvolvimento ágil;
+Escrever testes eficientes com RSpec, uma das ferramentas mais populares no ecossistema Rails;
+Implementar funcionalidades de forma iterativa, seguindo o ciclo 'Red, Green, Refactor';
+Melhorar a qualidade do código e reduzir bugs através de uma abordagem baseada em testes;
+Integrar boas práticas de TDD ao seu fluxo de trabalho no Rails.
+Seja você iniciante ou alguém que deseja reforçar seus conhecimentos, esta palestra fornecerá uma base sólida para começar a escrever código mais confiável e sustentável com Ruby on Rails.""", speaker_email: "speaker#{n}@email.com")
 
-    schedule_3.schedule_items.create(start_time: '11:00', lenght: 160, title: "Title #{5 + n}", description: "Something #{5 + n}", speaker_email: "speaker#{n}@email.com")
-    schedule_3.schedule_items.create(start_time: '14:00', lenght: 180, title: "Title #{6 + n}", description: "Something #{6 + n}", speaker_email: "speaker#{n}@email.com")
+    schedule_3.schedule_items.create(start_time: '11:00', length: 160, title: "Ruby on Rails com TDD #{5 + n}", description: """Nesta palestra, vamos explorar os fundamentos do TDD com Ruby on Rails, abordando desde os conceitos básicos até a aplicação prática no desenvolvimento de aplicações web. Você aprenderá a:
+Compreender os princípios do TDD e sua importância no desenvolvimento ágil;
+Escrever testes eficientes com RSpec, uma das ferramentas mais populares no ecossistema Rails;
+Implementar funcionalidades de forma iterativa, seguindo o ciclo 'Red, Green, Refactor';
+Melhorar a qualidade do código e reduzir bugs através de uma abordagem baseada em testes;
+Integrar boas práticas de TDD ao seu fluxo de trabalho no Rails.
+Seja você iniciante ou alguém que deseja reforçar seus conhecimentos, esta palestra fornecerá uma base sólida para começar a escrever código mais confiável e sustentável com Ruby on Rails.""", speaker_email: "speaker#{n}@email.com")
+    schedule_3.schedule_items.create(start_time: '14:00', length: 180, title: "Ruby on Rails com TDD #{6 + n}", description: """Nesta palestra, vamos explorar os fundamentos do TDD com Ruby on Rails, abordando desde os conceitos básicos até a aplicação prática no desenvolvimento de aplicações web. Você aprenderá a:
+Compreender os princípios do TDD e sua importância no desenvolvimento ágil;
+Escrever testes eficientes com RSpec, uma das ferramentas mais populares no ecossistema Rails;
+Implementar funcionalidades de forma iterativa, seguindo o ciclo 'Red, Green, Refactor';
+Melhorar a qualidade do código e reduzir bugs através de uma abordagem baseada em testes;
+Integrar boas práticas de TDD ao seu fluxo de trabalho no Rails.
+Seja você iniciante ou alguém que deseja reforçar seus conhecimentos, esta palestra fornecerá uma base sólida para começar a escrever código mais confiável e sustentável com Ruby on Rails.""", speaker_email: "speaker#{n}@email.com")
 end

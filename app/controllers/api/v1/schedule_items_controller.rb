@@ -14,4 +14,9 @@ class Api::V1::ScheduleItemsController < ApplicationController
 
     render status: 200, json: @schedule_item
   end
+
+  def teste
+    @schedule_item = ScheduleItem.find_by(id: params[:schedule_item_id], speaker_email: params[:email])
+    render status: 200, json: @schedule_item
+  end
 end
