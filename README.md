@@ -170,3 +170,28 @@ status: 404
   response: 'not found'
 }
 ```
+
+GET http://localhost:3001/events/speaker_events?email=speaker1@email.com
+
+```
+json
+{
+  "response": [
+    {
+      "id": 2,
+      "name": "Nolan Sipes",
+      "url": "localhost:3001/events/2",
+      "description": "Nolan Sipes teste",
+      "start_date": "2025-01-15",
+      "end_date": "2025-01-17",
+      "event_type": "in-person",
+      "location": "Mildura – Wentworth",
+      "participant_limit": 21,
+      "status": "draft",
+      "created_at": "2025-01-20T15:14:39.477Z",
+      "updated_at": "2025-01-20T15:14:39.477Z"
+    }
+  ]
+}
+
+```

@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     collection do
       get "speakers"
       get "schedule_items"
+      get "speaker_events"
     end
   end
   namespace :api do
