@@ -3,6 +3,6 @@ class ApplicationController < ActionController::API
 
 
   def not_found
-    render status: 404, json: { response: 'not found' }
+    render status: 404, json: { response: "not found" }
   end
 end
