@@ -3,7 +3,7 @@ class Api::V1::EventsController < ApplicationController
 
   # GET /events
   def index
-    @events = Event.all
+    @events = Event.joins(S)
 
     render status: 200, json: @events
   end

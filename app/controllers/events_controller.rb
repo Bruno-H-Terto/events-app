@@ -11,6 +11,6 @@ class EventsController < ApplicationController
 
   def speaker_events
     events = Event.joins(schedules: :schedule_items).where(schedule_items: { speaker_email: params[:email] }).distinct
-    render status: 200, json: { response: events }
+    render status: 200, json: events
   end
 end
